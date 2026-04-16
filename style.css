@@ -1,0 +1,73 @@
+
+/* ============================
+ RESET Y BASE
+ ============================ */
+*, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+:root {
+ --color-primary: #0a0a0abd;
+ --color-primary-dark: #015A66;
+ --color-accent: #0a9fdf;
+ --color-bg: #c0d8f7;
+ --color-text: hsl(218, 88%, 10%);
+ --color-muted: #042d86;
+ --color-white: #08a0f8;
+ --color-border: #E2E8F0;
+ --font-main: Arial, Helvetica, sans-serif;
+ --font-heading: Georgia, 'Times New Roman', serif;
+ body {
+ font-family: var(--font-main);
+ font-size: 16px;
+ line-height: 1.6;
+ color: var(--color-text);
+ background-color: var(--color-bg);
+}
+h2 {
+ font-family: var(--font-heading);
+ color: var(--color-primary);
+ margin-bottom: 1px;
+}.post {
+ background-color: var(--color-white);
+ padding: 25px;
+ margin-bottom: 20px;
+ border: 1px solid var(--color-border);
+ border-radius: 8px;
+}
+.meta {
+ color: var(--color-muted);
+ font-size: 0.85rem;
+ margin-bottom: 15px;
+}
+.btn {
+ display: inline-block;
+ background-color: var(--color-primary);
+ color: var(--color-white);
+ padding: 8px 20px;
+ text-decoration: none;
+ border-radius: 7px;
+ font-size: 0.9rem;
+ margin-top: 10px;
+}.destacado {
+ border-left: 4px solid var(--color-accent);
+ background-color: #f1ece8;
+}
+#contacto {
+ max-width: 600px;
+ margin: 30px auto;
+ padding: 0 20px;
+}
+/* Descendiente: A B */
+nav a {
+ color: var(--color-white);
+ text-decoration: none;
+ margin: 0 12px;
+ padding: 5px 10px;
+ border-radius: 4px;
+}
+
+
+
+}
