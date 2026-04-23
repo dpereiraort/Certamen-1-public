@@ -101,6 +101,7 @@
                 <td>Básico</td>
                 <td><div class="barra"><div class="progreso react"></div></div></td>
             </tr>
+            
         </tbody>
     </table>
 
@@ -171,13 +172,69 @@
         </figure>
 
     </div>
+<section id="contacto">
+    <h2 class="titulo-seccion">Contacto</h2>
+    <p class="subtitulo">Envíame un mensaje</p>
+
+    <div class="contenedor-contacto">
+        <!-- Formulario -->
+        <form class="formulario-contacto">
+            <div class="fila-input">
+                <div class="grupo">
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Tu nombre" required>
+                </div>
+                <div class="grupo">
+                    <label>Correo electrónico</label>
+                    <input type="email" placeholder="tu@email.com" required>
+                </div>
+            </div>
+
+            <div class="grupo">
+                <label>Asunto</label>
+                <select required>
+                    <option value="" disabled selected>Selecciona un asunto</option>
+                    <option value="trabajo">Oferta de trabajo</option>
+                    <option value="consulta">Consulta técnica</option>
+                    <option value="saludo">Solo saludar</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Mensaje</label>
+                <textarea rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar mensaje</button>
+        </form>
+
+
+        <div class="info-contacto">
+            <h3>Información de contacto</h3>
+            <ul>
+                <li><span class="material-symbols-outlined">📧</span> dpereiraort@gmai.com</li>
+                <li><span class="material-symbols-outlined">📍</span> Concepción, Chile</li>
+                <li><span class="material-symbols-outlined">📱</span> +56 9 1234 5678</li>
+                <li><span class="material-symbols-outlined">🌐</span> github.com/dpereiraort</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
+<footer class="footer-principal">
+    <div class="footer-contenido">
+        <div class="logo-footer">
+            <span class="avatar-mini">DP</span>
+            <h3>Daniel Pereira</h3>
+        </div>
+        <div class="social-links">
+            <a href="#">GH</a> <a href="#">LI</a> <a href="#">TW</a> <a href="#">IG</a>
+        </div>
+    </div>
+    <hr>
+    <p>© 2026 Daniel Pereira. Todos los derechos reservados.</p>
+</footer>
 
-
- </article>
- 
-<!-- FOOTER -->
 <footer>
  <p>&copy; 2026 Mi Blog - INACAP Front End</p>
 </footer>
