@@ -257,3 +257,110 @@ figcaption h3 {
     color: #64748b;
     margin-bottom: 40px;
 }
+
+/* Sección Contacto */
+.contenedor-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.formulario-contacto {
+    flex: 2;
+    text-align: left;
+    
+}
+
+.fila-input {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.grupo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    font-family: inherit;
+}
+
+.btn-enviar {
+    background-color: #1e3a8a; /* Color azul oscuro de la imagen */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Info lateral */
+.info-contacto {
+    flex: 1;
+    background-color: #f8fafc;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.info-contacto h3 { 
+    margin-top: 0; 
+    margin-bottom: 20px;
+    color: #0f172a; /* Un tono más oscuro para el título */
+}
+.info-contacto li { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 20px; 
+    color: #1e3a8a; /* Tu color azul de la referencia */
+    font-size: 0.95rem;
+}
+.info-contacto .material-symbols-outlined {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer-principal {
+    background-color: #1e293b;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.social-links a {
+    color: white;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+}
