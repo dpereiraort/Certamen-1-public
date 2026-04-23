@@ -18,6 +18,7 @@
  --color-border: #E2E8F0;
  --font-main: Arial, Helvetica, sans-serif;
  --font-heading: Georgia, 'Times New Roman', serif;
+}
  body {
  font-family: var(--font-main);
  font-size: 16px;
@@ -67,7 +68,54 @@ nav a {
  padding: 5px 10px;
  border-radius: 4px;
 }
+/* Contenedor principal de la sección */
+#sobre-mi {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
+.seccion-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+/* El truco de las dos columnas */
+.contenedor-flex {
+    display: flex;
+    gap: 40px; /* Espacio entre columnas */
+    align-items: flex-start;
+}
 
+.bio {
+    flex: 2; /* Toma más espacio (la biografía) */
+}
+
+.datos-personales {
+    flex: 1; /* Toma menos espacio (la tarjeta lateral) */
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra suave */
+}
+
+/* Estilo para la lista de datos */
+.datos-personales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.datos-personales li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 5px;
+}
+
+/* Estilo para el bloque de la frase (blockquote) */
+.frase-destacada {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid var(--color-accent);
+    font-style: italic;
 }
