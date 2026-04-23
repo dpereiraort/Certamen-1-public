@@ -190,3 +190,70 @@ section {
 }
 /* cambio para commit 3 */
 
+/* Contenedor principal de la galería */
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* La tarjeta (figure) */
+.tarjeta-proyecto {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-10px);
+}
+
+/* Espacio para la imagen (Gradients) */
+.imagen-placeholder {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.gradient-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.gradient-2 { background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); }
+.gradient-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.gradient-4 { background: linear-gradient(135deg, #4dc657 0%, #35ec38 100%); }
+
+/* Texto dentro de la tarjeta */
+figcaption {
+    padding: 20px;
+    text-align: left;
+}
+
+.categoria {
+    font-size: 0.8rem;
+    color: #64748b;
+    display: block;
+    margin-bottom: 8px;
+}
+
+figcaption h3 {
+    margin: 0 0 10px 0;
+    color: var(--texto-negro);
+}
+
+.link-repositorio {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--naranja-accent); /* Usamos tu naranja */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+}
